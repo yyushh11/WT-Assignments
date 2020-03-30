@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <title>Information form</title>
+  </head>
+  <body style="background-color: lightblue">
+  
+    <form>
+    	<fieldset><legend style="font-size: 30px"> <b> FORM</legend>
+    	<table>
+    		<tr>
+    			<td><b>FIRST NAME  </b></td>
+    			<td><input type="text" name="name" id="name" onblur="capital()"><br></td>
+    		</tr>
+    		
+        <tr>
+    			<td><b>LAST NAME : </b></td>
+    			<td><input type="text" name="name"><br></td>
+    		</tr>
+    		
+    		<tr>
+    			<td><b>MOBILE NO. : </b></td>
+    			<td><input type="number" name="number" value="number"><br></td>
+    		</tr>
+    		<
+        <tr>
+    			<td><b>DATE OF BIRTH : </b></td>
+    			<td><input type="date" name="date"><br></td><br>
+    		</tr>
+    		
+        <tr>
+    			<td><b>GENDER : </b></td>
+    			<td>Male &nbsp;&nbsp;<input type="radio" name="Gender" value="Male"><br>
+                 Female<input type="radio" name="Gender" value="Female"><br>
+                 Other &nbsp;&nbsp;<input type="radio" name="Gender" value="Other"><br></td>
+    		</tr>
+    		<br>
+              <td><b>ADDRESS :</b></td>
+          <td><textarea name="Address" rows="8" cols="80"></textarea><br></td>
+        </tr>
+        <br>
+    		<tr>
+    			<td><b>CITY : </b></td>
+    			<td><select class="City" name="City">
+          
+            <option value="Anand">Anand</option>
+            <option value="Jamnagar">Jamnagar</option>
+       
+            <option value="Nadiad" selected>Nadiad</option>
+           
+            <option value="Ahemdabad">Ahemdabad</option>
+            <option value="Vadodara">Vadodara</option>
+          </select></td>
+    		</tr>
+    		<br>
+    		
+    		<tr>
+    			<td colspan="2" style="text-align:center"><button>Submit</button></td>
+    		</tr>
+    	</table>
+    </fieldset>
+    </form>
+    <script>
+      function capital() {
+        var x = document.getElementById("name");
+        x.value = x.value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>

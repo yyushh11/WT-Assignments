@@ -1,0 +1,13 @@
+table, th, td {
+  border: 2px solid black;
+}
+
+th {
+  text-align: center;
+}
+
+ th, td {
+  padding: 30px;
+  text-align: left;
+}
+tr:hover {background-color: yellow;}
